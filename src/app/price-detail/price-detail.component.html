@@ -1,0 +1,188 @@
+<!-- <div class="container-fluid">
+    <div class="accordion" id="searchAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Price List
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                <ag-grid-angular style="width: 100%; height: 200px;" class="ag-theme-balham" [rowData]="rowData"
+                    [columnDefs]="columnDefs">
+                </ag-grid-angular>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid">
+    <div class="accordion" id="searchAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class = "bi bi-list px-2"></i> Price List - Belgium CB_UIT-12121
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <select class="form-select" multiple aria-label="multiple select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="offset-3">
+                                    <button class="btn btn-primary btn-sm mt-1">Select</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <select class="form-select" multiple aria-label="multiple select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary btn-sm mt-1">Select</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row g-2 mt-3">
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row g-2 mt-3">
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label for="exampleInputEmail1" class="p-2">Email address</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 ">
+                        <div class="col float-end ">
+                            <button type="button" class="btn btn-primary" (click)="showResults = true">Search</button>
+                            <button type="button" class="btn btn-light" (click)="showResults = false">Reset</button>
+                            <button type="button" class="btn btn-light">Save Search</button>
+                            <button type="button" class="btn btn-success">Export Excel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Price List
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                <ag-grid-angular style="width: 100%; height: 200px;" class="ag-theme-balham" [rowData]="rowData"
+                    [columnDefs]="columnDefs">
+                </ag-grid-angular>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>
