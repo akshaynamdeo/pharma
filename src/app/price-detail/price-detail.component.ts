@@ -16,7 +16,7 @@ export class PriceDetailComponent implements OnInit {
     this.loading=true;
     setTimeout(() => {
   this.loading=false;
-  }, 1000);
+  }, 500);
   }
   showResults: any
   columnDefs = [

@@ -49,12 +49,12 @@ onGridReady(params: GridReadyEvent) {
   this.gridApi = params.api;
 }
 search(){
-  // this.loading=true;
-      this.showResults = true  
+  this.loading=true;
+      // this.showResults = true  
 
-  // setTimeout(() => {
-    //   this.showResults = true  
-  // this.loading=false;
-  // }, 1000);
+  setTimeout(() => {
+      this.showResults = true  
+  this.loading=false;
+  }, 1000);
 }
 }

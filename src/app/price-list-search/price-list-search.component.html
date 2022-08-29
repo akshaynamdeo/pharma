@@ -173,8 +173,13 @@
                       type="button"
                       class="btn btn-primary btn-sm mx-2"
                       (click)="search()"
+                       [disabled] = "loading"
                     >
-                      Search
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <!-- <span>Search</span> -->
+                    <span *ngIf="loading" class="ms-1">Searching...</span>
+                    <span *ngIf="!loading">Search</span>
+                    
                     </button>
                     <button
                       type="button"
