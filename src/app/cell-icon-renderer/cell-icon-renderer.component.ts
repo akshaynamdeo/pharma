@@ -5,12 +5,12 @@ import { ICellRendererParams } from 'ag-grid-community';
 @Component({
   selector: 'app-cell-icon-renderer',
   templateUrl: './cell-icon-renderer.component.html',
-  styleUrls: ['./cell-icon-renderer.component.scss']
+  styleUrls: ['./cell-icon-renderer.component.scss'],
 })
 export class CellIconRendererComponent implements ICellRendererAngularComp {
   params!: ICellRendererParams<any, any>;
 
-  constructor() { }
+  constructor() {}
   agInit(params: ICellRendererParams<any, any>): void {
     this.params = params;
   }
@@ -18,7 +18,5 @@ export class CellIconRendererComponent implements ICellRendererAngularComp {
     throw new Error('Method not implemented.');
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
