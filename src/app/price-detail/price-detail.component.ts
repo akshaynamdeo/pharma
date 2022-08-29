@@ -8,10 +8,15 @@ import { CellIconRendererComponent } from '../cell-icon-renderer/cell-icon-rende
   styleUrls: ['./price-detail.component.scss']
 })
 export class PriceDetailComponent implements OnInit {
+  loading!: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.loading=true;
+    setTimeout(() => {
+  this.loading=false;
+  }, 1000);
   }
   showResults: any
   columnDefs = [

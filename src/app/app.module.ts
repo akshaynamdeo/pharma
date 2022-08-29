@@ -9,6 +9,7 @@ import { PriceDetailComponent } from './price-detail/price-detail.component';
 import { LinkRendererComponent } from './link-renderer/link-renderer.component';
 import { CellIconRendererComponent } from './cell-icon-renderer/cell-icon-renderer.component';
 import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderComponent } from './header/header.component';
     PriceDetailComponent,
     LinkRendererComponent,
     CellIconRendererComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

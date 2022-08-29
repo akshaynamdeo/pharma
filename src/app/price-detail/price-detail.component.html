@@ -1,6 +1,8 @@
-<div class="container-fluid">
-  <app-header> </app-header>
-  <div class="accordion" id="searchAccordion">
+<div class="text-center" *ngIf="loading">
+  <div class="spinner-border text-danger loader" role="status">
+  </div>
+</div>
+  <div class="accordion" id="searchAccordion" *ngIf="!loading">
     <div class="accordion-item m-3">
       <h3 class="accordion-header" id="headingOne">
         <button
@@ -301,4 +303,4 @@
       </div>
     </div>
   </div>
-</div>
+

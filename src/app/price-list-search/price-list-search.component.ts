@@ -9,7 +9,7 @@ import { LinkRendererComponent } from '../link-renderer/link-renderer.component'
 })
 export class PriceListSearchComponent implements OnInit {
   gridApi: any;
-
+loading: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -47,5 +47,14 @@ onChangeEvent(e : any): void{
 
 onGridReady(params: GridReadyEvent) {
   this.gridApi = params.api;
+}
+search(){
+  // this.loading=true;
+      this.showResults = true  
+
+  // setTimeout(() => {
+    //   this.showResults = true  
+  // this.loading=false;
+  // }, 1000);
 }
 }

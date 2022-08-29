@@ -1,5 +1,5 @@
 .accordion-button{
-    background-color: maroon !important;
+    background-color: #d22746 !important;
 }
 
 .right-float{
@@ -8,6 +8,12 @@
 
 .font-14{
     font-size: 14px;;
+}
+.accordion-button::after {
+    font-family: "bootstrap-icons";
+    content: "\F282" !important;
+    font-size: 20px;
+
 }
 
 // *{
