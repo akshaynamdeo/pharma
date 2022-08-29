@@ -8,6 +8,7 @@ import { PriceListSearchComponent } from './price-list-search/price-list-search.
 import { PriceDetailComponent } from './price-detail/price-detail.component';
 import { LinkRendererComponent } from './link-renderer/link-renderer.component';
 import { CellIconRendererComponent } from './cell-icon-renderer/cell-icon-renderer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CellIconRendererComponent } from './cell-icon-renderer/cell-icon-render
     PriceListSearchComponent,
     PriceDetailComponent,
     LinkRendererComponent,
-    CellIconRendererComponent
+    CellIconRendererComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

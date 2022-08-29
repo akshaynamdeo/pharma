@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GridReadyEvent } from 'ag-grid-community';
 import { LinkRendererComponent } from '../link-renderer/link-renderer.component';
 
 @Component({
@@ -7,6 +8,7 @@ import { LinkRendererComponent } from '../link-renderer/link-renderer.component'
   styleUrls: ['./price-list-search.component.scss']
 })
 export class PriceListSearchComponent implements OnInit {
+  gridApi: any;
 
   constructor() { }
 
@@ -35,4 +37,15 @@ rowData = [
     {make: 'Ford', model: 'Mondeo', price: 32000,id:4},
     {make: 'Porsche', model: 'Boxter', price: 72000,id:4}
 ];
+
+onChangeEvent(e : any): void{
+  console.log(e.target.value);
+  this.gridApi.setQuickFilter(
+    e.target.value
+  );
+}
+
+onGridReady(params: GridReadyEvent) {
+  this.gridApi = params.api;
+}
 }
